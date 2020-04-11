@@ -1,0 +1,125 @@
+*, *::before *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+}
+
+:root {
+    --hue-neutral: 200;
+}
+
+body{
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: top;
+    background-color: hsl(var(--hue), 100%, 35%);
+}
+
+.container {
+    width: 969px;
+    max-width: 80%;
+    height: 1000px;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.names {
+    display:grid;
+    grid-template-columns: auto;
+    margin: 20px 0;
+}
+
+.name {
+    --hue: var(--hue-neutral);
+    background-color: lightcyan;
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 5px;
+    padding: 1px 3px;
+    color: black;
+    outline: none;
+    font-size: 10px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.card {
+    --hue: var(--hue-neutral);
+    background-color: whitesmoke;
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 7.5px;
+    color: black;
+    outline: none;
+    text-decoration-color: black;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.nickname-buttons{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+.btn2 {
+    --hue: var(--hue-neutral);
+    background-color: lightgrey;
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    background-color: red;
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.start-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
