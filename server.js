@@ -7,6 +7,7 @@ const Table = require('./src/Entities/game');
 const GameRepository = require('./src/Repository/GameRepository');
 
 const app = express();
+const port = process.env.PORT || 3000
 
 //setting the static folder
 app.use(express.static(path.join(__dirname, 'public')));
@@ -97,7 +98,7 @@ server.on('error', (err) => {
     console.error('Server error:', err);
 });  
 
-server.listen(3000, () => {
+server.listen(port, () => {
     console.log('Guess who started on 3000');
 });
 
